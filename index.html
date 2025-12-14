@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+       
+        body {
+            text-align: center; 
+            font-family: sans-serif;
+            margin-top: 50px;
+        }
+        input, button {
+            padding: 10px; 
+            margin: 5px;   
+        }
+        p {
+            color: rgb(50, 153, 41);   
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Text Display</h1>
+    
+    <input type="text" id="userInput" placeholder="Type here...">
+    
+    <button onclick="updateText()">Click Me</button>
+
+    <p id="displayArea">Your text will appear here.</p>
+
+    <script>
+        function updateText() {
+            var text = document.getElementById("userInput").value;
+            document.getElementById("displayArea").innerText = text;
+        }
+    </script>
+
+</body>
+</html>
